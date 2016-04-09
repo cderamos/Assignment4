@@ -1,0 +1,24 @@
+
+public class Test {
+	
+	public static void main(String[]args){
+		LinkedList<String> linkedList = new LinkedList<String>();
+		LinkedList<String> linkedList2 = new LinkedList<String>();
+		
+		String[] random = {"a","b","c","d"};
+		String[] random2 = {"e","f"};
+		
+		for(String one: random){
+			linkedList.addLast(one);
+		
+		}
+		
+		for (String two:random2){
+			linkedList2.addLast(two);
+		}																																																																																	
+	
+		linkedList.insertAfter("c", linkedList2);
+		
+	}
+
+}
