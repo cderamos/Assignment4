@@ -1,0 +1,41 @@
+
+public class TestQ4 {
+	
+	public static void main(String[]args){
+		StudentInfo.display();
+		//Test one
+		SinglyLinkedList<String> linkedList = new SinglyLinkedList<String>();
+		String[] random = {"1","2","3","4","5","6"};
+		
+		for(int i=0;i<random.length;i++)
+		{
+			linkedList.addFirst(random[i]);
+		}
+		
+		System.out.println(linkedList.take(4));
+		
+		//Test 2
+		SinglyLinkedList<String> linkedList2 = new SinglyLinkedList<String>();
+		String[] random2 = {"1","2","3","4","5","6"};
+	
+		for(int i=0;i<random2.length;i++)
+		{
+			linkedList2.addFirst(random[i]);
+		}
+
+		System.out.println(linkedList2.take(0));
+		
+		//Test 3
+		SinglyLinkedList<String> linkedList3 = new SinglyLinkedList<String>();
+		String[] random3 = {"1","2","3","4","5","6"};
+	
+		for(int i=0;i<random2.length;i++)
+		{
+			linkedList2.addFirst(random[i]);
+		}
+
+		System.out.println(linkedList2.take(10));
+		
+	}
+
+}
